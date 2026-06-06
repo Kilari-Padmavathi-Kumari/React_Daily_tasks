@@ -19,9 +19,7 @@ function showEvents()
   for (var i = 0; i < eventNames.length; i++)
   {
     var item = document.createElement("li")
-    item.innerHTML = eventNames[i] + " "
-    item.innerHTML += "<button onclick='editEvent(" + i + ")'>Edit</button> "
-    item.innerHTML += "<button onclick='deleteEvent(" + i + ")'>Delete</button>"
+    item.innerHTML = eventNames[i] + " <button onclick='editEvent(" + i + ")'>Edit</button> <button onclick='deleteEvent(" + i + ")'>Delete</button>"
     list.appendChild(item)
   }
 }
